@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="W1Z-nd-P4T" userLabel="idCellFreeTime" customClass="CustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W1Z-nd-P4T" id="hif-Em-zoe">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="j0K-6z-ule">
+                        <rect key="frame" x="0.0" y="8" width="320" height="134"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="j0K-6z-ule" secondAttribute="trailing" id="52B-F8-ZHB"/>
+                    <constraint firstItem="j0K-6z-ule" firstAttribute="centerY" secondItem="hif-Em-zoe" secondAttribute="centerY" id="Gxp-Tm-f4i"/>
+                    <constraint firstItem="j0K-6z-ule" firstAttribute="top" secondItem="hif-Em-zoe" secondAttribute="topMargin" id="LlC-FF-mm5"/>
+                    <constraint firstItem="j0K-6z-ule" firstAttribute="leading" secondItem="hif-Em-zoe" secondAttribute="leading" id="TRf-X9-bFm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="idCellFreeTime"/>
+            <connections>
+                <outlet property="freeTimeTxtView" destination="j0K-6z-ule" id="CBN-UP-Jvb"/>
+            </connections>
+            <point key="canvasLocation" x="221" y="176"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="365" id="uNN-Lt-RDU" userLabel="idCellImage" customClass="CustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="365"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uNN-Lt-RDU" id="rMv-sZ-FfE">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="364.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbC-dj-u6s">
+                        <rect key="frame" x="-296" y="44" width="912" height="320"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CJx-MX-dBt">
+                                <rect key="frame" x="300" y="0.0" width="312" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="312" id="eCs-pk-R62"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="CJx-MX-dBt" firstAttribute="centerX" secondItem="cbC-dj-u6s" secondAttribute="centerX" id="F1h-zO-7N4"/>
+                            <constraint firstItem="CJx-MX-dBt" firstAttribute="top" secondItem="cbC-dj-u6s" secondAttribute="top" id="Wfy-Mw-mLS"/>
+                            <constraint firstAttribute="trailing" secondItem="CJx-MX-dBt" secondAttribute="trailing" constant="300" id="ijZ-yO-hHz"/>
+                            <constraint firstItem="CJx-MX-dBt" firstAttribute="centerY" secondItem="cbC-dj-u6s" secondAttribute="centerY" id="mzc-Fr-Hhw"/>
+                            <constraint firstAttribute="bottom" secondItem="CJx-MX-dBt" secondAttribute="bottom" id="p24-tz-jbH"/>
+                        </constraints>
+                    </scrollView>
+                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7VZ-bb-9Tw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <items>
+                            <barButtonItem systemItem="camera" id="IFe-UC-jJG">
+                                <inset key="imageInsets" minX="0.0" minY="0.0" maxX="9" maxY="0.0"/>
+                                <connections>
+                                    <action selector="takePicture:" destination="uNN-Lt-RDU" id="1yE-tC-HhL"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="organize" id="E3Y-gp-FfF">
+                                <inset key="imageInsets" minX="0.0" minY="0.0" maxX="-8" maxY="0.0"/>
+                            </barButtonItem>
+                        </items>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </toolbar>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7VZ-bb-9Tw" firstAttribute="top" secondItem="rMv-sZ-FfE" secondAttribute="top" id="Db2-7s-9VR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cbC-dj-u6s" secondAttribute="bottom" constant="-7.5" id="F4z-If-njs"/>
+                    <constraint firstItem="cbC-dj-u6s" firstAttribute="top" secondItem="7VZ-bb-9Tw" secondAttribute="bottom" id="FpY-69-kZn"/>
+                    <constraint firstItem="7VZ-bb-9Tw" firstAttribute="leading" secondItem="rMv-sZ-FfE" secondAttribute="leading" id="W6R-mo-KlD"/>
+                    <constraint firstItem="cbC-dj-u6s" firstAttribute="leading" secondItem="rMv-sZ-FfE" secondAttribute="leading" constant="-296" id="YFH-Fc-auO"/>
+                    <constraint firstAttribute="trailing" secondItem="7VZ-bb-9Tw" secondAttribute="trailing" id="auc-JG-E8t"/>
+                    <constraint firstItem="7VZ-bb-9Tw" firstAttribute="centerX" secondItem="cbC-dj-u6s" secondAttribute="centerX" id="mLh-NU-vhL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="idCellImage"/>
+            <connections>
+                <outlet property="image1" destination="CJx-MX-dBt" id="AOU-eK-ktj"/>
+            </connections>
+            <point key="canvasLocation" x="-110" y="269.5"/>
+        </tableViewCell>
+    </objects>
+</document>

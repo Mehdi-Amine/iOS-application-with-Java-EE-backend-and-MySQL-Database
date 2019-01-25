@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyServiceViewController">
+            <connections>
+                <outlet property="background" destination="0PD-fZ-dPc" id="HRy-F3-uPe"/>
+                <outlet property="categoryPicker" destination="eWu-BJ-Wf6" id="lef-Sc-Fge"/>
+                <outlet property="descriptionTxtView" destination="LNl-Em-sMQ" id="eGb-iu-m9L"/>
+                <outlet property="imageScroller" destination="h0D-bU-mwv" id="iQb-NP-kk2"/>
+                <outlet property="scroller" destination="K0a-h7-41z" id="35K-KP-Jgj"/>
+                <outlet property="servicePicture" destination="HKl-3C-LGx" id="edd-GH-cp5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="870"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K0a-h7-41z">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="870"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0PD-fZ-dPc" customClass="UIControl">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="870"/>
+                            <connections>
+                                <action selector="backgroundTapped:" destination="-1" eventType="touchUpInside" id="DPg-Og-DSp"/>
+                            </connections>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Olt-bX-rgJ">
+                            <rect key="frame" x="122" y="63" width="356" height="665"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sélectionnez la catégorie de votre service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6L-v7-YlA">
+                                    <rect key="frame" x="8" y="0.0" width="341" height="21"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWu-BJ-Wf6">
+                                    <rect key="frame" x="0.0" y="21" width="356" height="216"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="ZJF-P2-7SM"/>
+                                        <outlet property="delegate" destination="-1" id="JIt-C9-2Xs"/>
+                                    </connections>
+                                </pickerView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Décrivez votre service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7S-CL-WNT">
+                                    <rect key="frame" x="87" y="237" width="182" height="21"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Description du service" translatesAutoresizingMaskIntoConstraints="NO" id="LNl-Em-sMQ">
+                                    <rect key="frame" x="0.0" y="257" width="356" height="128"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="Toc-GV-SmE"/>
+                                    </connections>
+                                </textView>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmN-7F-0SW">
+                                    <rect key="frame" x="136" y="385" width="85" height="30"/>
+                                    <state key="normal" title="Take picture"/>
+                                    <connections>
+                                        <action selector="takePicture:" destination="-1" eventType="touchUpInside" id="rBR-EL-qZx"/>
+                                    </connections>
+                                </button>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h0D-bU-mwv">
+                                    <rect key="frame" x="8" y="415" width="340" height="250"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HKl-3C-LGx">
+                                            <rect key="frame" x="-1" y="0.0" width="341" height="250"/>
+                                        </imageView>
+                                    </subviews>
+                                </scrollView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="LNl-Em-sMQ" firstAttribute="width" secondItem="eWu-BJ-Wf6" secondAttribute="width" id="mAj-Ku-BeA"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="0PD-fZ-dPc" firstAttribute="width" secondItem="K0a-h7-41z" secondAttribute="width" id="BiB-Ie-6g4"/>
+                        <constraint firstItem="Olt-bX-rgJ" firstAttribute="centerX" secondItem="K0a-h7-41z" secondAttribute="centerX" id="ElW-4p-t6o"/>
+                        <constraint firstItem="0PD-fZ-dPc" firstAttribute="centerX" secondItem="K0a-h7-41z" secondAttribute="centerX" id="IXG-hx-T7F"/>
+                        <constraint firstItem="0PD-fZ-dPc" firstAttribute="height" secondItem="K0a-h7-41z" secondAttribute="height" id="o6l-7M-JNp"/>
+                        <constraint firstItem="0PD-fZ-dPc" firstAttribute="centerY" secondItem="K0a-h7-41z" secondAttribute="centerY" id="r0X-tX-Ygv"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="8ac-km-NYB"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="K0a-h7-41z" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="8sT-Dc-bHg"/>
+                <constraint firstItem="K0a-h7-41z" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Bgd-4p-h4a"/>
+                <constraint firstItem="K0a-h7-41z" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="Yqk-bQ-1BH"/>
+                <constraint firstItem="K0a-h7-41z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hzu-XG-gUw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="358" y="331"/>
+        </view>
+    </objects>
+</document>

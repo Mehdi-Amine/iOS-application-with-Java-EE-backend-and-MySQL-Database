@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="499" id="jRZ-hJ-Nkm" userLabel="idCellMap" customClass="CustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jRZ-hJ-Nkm" id="6wF-VA-GGh">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="499.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y3R-20-zwF">
+                        <rect key="frame" x="0.0" y="8" width="320" height="483.5"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="jtp-Ap-Rsw"/>
+                        </connections>
+                    </mapView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y3R-20-zwF" firstAttribute="centerY" secondItem="6wF-VA-GGh" secondAttribute="centerY" id="2N6-pf-djr"/>
+                    <constraint firstItem="y3R-20-zwF" firstAttribute="top" secondItem="6wF-VA-GGh" secondAttribute="topMargin" id="564-F3-19o"/>
+                    <constraint firstItem="y3R-20-zwF" firstAttribute="leading" secondItem="6wF-VA-GGh" secondAttribute="leading" id="Jnl-V9-28V"/>
+                    <constraint firstAttribute="trailing" secondItem="y3R-20-zwF" secondAttribute="trailing" id="a8T-HV-WdG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="idCellMap"/>
+            <connections>
+                <outlet property="mapView" destination="y3R-20-zwF" id="pA2-d6-BjP"/>
+            </connections>
+            <point key="canvasLocation" x="221" y="311"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="233" id="qTj-8R-Rdz" userLabel="idCellCategory" customClass="CustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="228"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qTj-8R-Rdz" id="uzP-qb-LUx">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="227.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OGZ-dU-sYg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="228"/>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="CNO-kf-uT6"/>
+                            <outlet property="delegate" destination="-1" id="e4C-W9-tbQ"/>
+                        </connections>
+                    </pickerView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OGZ-dU-sYg" firstAttribute="leading" secondItem="uzP-qb-LUx" secondAttribute="leading" id="3pe-xE-Ltm"/>
+                    <constraint firstItem="OGZ-dU-sYg" firstAttribute="centerY" secondItem="uzP-qb-LUx" secondAttribute="centerY" id="Uj5-DH-7QW"/>
+                    <constraint firstItem="OGZ-dU-sYg" firstAttribute="top" secondItem="uzP-qb-LUx" secondAttribute="top" id="Z85-Z2-Jud"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="idCellCategory"/>
+            <connections>
+                <outlet property="categoryPicker" destination="OGZ-dU-sYg" id="3C5-UJ-khS"/>
+            </connections>
+            <point key="canvasLocation" x="216" y="251"/>
+        </tableViewCell>
+    </objects>
+</document>

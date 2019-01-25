@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RateViewController">
+            <connections>
+                <outlet property="friendlinessRatingView" destination="wC8-hf-gmX" id="Tau-Vp-SJL"/>
+                <outlet property="priceRatingView" destination="XI4-Xx-asu" id="dJf-u5-rQT"/>
+                <outlet property="punctualityRatingView" destination="veP-vn-qzZ" id="yWC-QP-Chf"/>
+                <outlet property="qualityRatingView" destination="Ncy-7I-aEJ" id="qVJ-D2-ZDa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="wood.png" translatesAutoresizingMaskIntoConstraints="NO" id="w5K-q1-Lve">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ncy-7I-aEJ" userLabel="Quality Rating View" customClass="ASStarRatingView">
+                    <rect key="frame" x="99" y="156" width="177" height="43"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XI4-Xx-asu" userLabel="Price Rating View" customClass="ASStarRatingView">
+                    <rect key="frame" x="99" y="251" width="177" height="43"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="veP-vn-qzZ" userLabel="Punctuality Rating View" customClass="ASStarRatingView">
+                    <rect key="frame" x="99" y="346" width="177" height="43"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wC8-hf-gmX" userLabel="Friendliness Rating View" customClass="ASStarRatingView">
+                    <rect key="frame" x="99" y="441" width="177" height="43"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qualité du service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nD3-nt-v6P">
+                    <rect key="frame" x="118" y="118" width="138" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evaluation du Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgC-Cm-1ck">
+                    <rect key="frame" x="62" y="41" width="250" height="33"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prix du service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQr-zT-UBD">
+                    <rect key="frame" x="131" y="222" width="113" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ponctualité du service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmW-HU-OPY">
+                    <rect key="frame" x="103" y="317" width="169" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienveillance du service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pQ-Hm-hWp">
+                    <rect key="frame" x="96" y="412" width="183" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKd-k8-haD">
+                    <rect key="frame" x="191" y="562" width="176" height="55"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="176" id="lcb-Py-ESf"/>
+                    </constraints>
+                    <state key="normal" title="Annuler">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancel:" destination="-1" eventType="touchUpInside" id="XWZ-cL-qMg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6L-K4-5ZQ">
+                    <rect key="frame" x="8" y="562" width="177" height="55"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="ZIX-Ga-K1R"/>
+                    </constraints>
+                    <state key="normal" title="Evaluer le service">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="rateService:" destination="-1" eventType="touchUpInside" id="T8W-lT-Bjr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XI4-Xx-asu" firstAttribute="top" secondItem="WQr-zT-UBD" secondAttribute="bottom" constant="8" symbolic="YES" id="2DT-Yh-3LS"/>
+                <constraint firstItem="veP-vn-qzZ" firstAttribute="top" secondItem="fmW-HU-OPY" secondAttribute="bottom" constant="8" symbolic="YES" id="42M-Bb-4pa"/>
+                <constraint firstItem="Ncy-7I-aEJ" firstAttribute="trailing" secondItem="XI4-Xx-asu" secondAttribute="trailing" id="4cP-vv-lqR"/>
+                <constraint firstItem="veP-vn-qzZ" firstAttribute="trailing" secondItem="wC8-hf-gmX" secondAttribute="trailing" id="8un-gz-ZFn"/>
+                <constraint firstItem="fmW-HU-OPY" firstAttribute="top" secondItem="XI4-Xx-asu" secondAttribute="bottom" constant="23" id="D5q-nP-7o3"/>
+                <constraint firstAttribute="bottom" secondItem="v6L-K4-5ZQ" secondAttribute="bottom" constant="50" id="De0-oI-LqZ"/>
+                <constraint firstItem="XI4-Xx-asu" firstAttribute="trailing" secondItem="veP-vn-qzZ" secondAttribute="trailing" id="DlT-XW-gyD"/>
+                <constraint firstItem="v6L-K4-5ZQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="JaV-q6-JO8"/>
+                <constraint firstItem="QKd-k8-haD" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="LOU-Bl-6fg"/>
+                <constraint firstItem="WQr-zT-UBD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="222" id="N32-7D-842"/>
+                <constraint firstItem="wC8-hf-gmX" firstAttribute="top" secondItem="8pQ-Hm-hWp" secondAttribute="bottom" constant="8" symbolic="YES" id="NLt-kb-5fc"/>
+                <constraint firstItem="XI4-Xx-asu" firstAttribute="leading" secondItem="veP-vn-qzZ" secondAttribute="leading" id="Ox3-SK-rx7"/>
+                <constraint firstItem="Ncy-7I-aEJ" firstAttribute="leading" secondItem="XI4-Xx-asu" secondAttribute="leading" id="PVU-RT-wDm"/>
+                <constraint firstItem="QKd-k8-haD" firstAttribute="leading" secondItem="v6L-K4-5ZQ" secondAttribute="trailing" constant="6" id="R6N-Rg-kdP"/>
+                <constraint firstItem="dgC-Cm-1ck" firstAttribute="centerX" secondItem="w5K-q1-Lve" secondAttribute="centerX" id="U4i-Iz-2ri"/>
+                <constraint firstItem="nD3-nt-v6P" firstAttribute="top" secondItem="dgC-Cm-1ck" secondAttribute="bottom" constant="44" id="UYw-gK-Yva"/>
+                <constraint firstItem="dgC-Cm-1ck" firstAttribute="centerX" secondItem="nD3-nt-v6P" secondAttribute="centerX" id="ZF9-qe-Mzg"/>
+                <constraint firstItem="Ncy-7I-aEJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="99" id="bca-PQ-kOq"/>
+                <constraint firstItem="WQr-zT-UBD" firstAttribute="top" secondItem="Ncy-7I-aEJ" secondAttribute="bottom" constant="23" id="bxd-5v-KIF"/>
+                <constraint firstItem="fmW-HU-OPY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="317" id="c9s-Py-d6Z"/>
+                <constraint firstItem="wC8-hf-gmX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="441" id="dkG-HJ-8Vu"/>
+                <constraint firstItem="Ncy-7I-aEJ" firstAttribute="top" secondItem="nD3-nt-v6P" secondAttribute="bottom" constant="17" id="hTJ-5N-X5i"/>
+                <constraint firstItem="8pQ-Hm-hWp" firstAttribute="top" secondItem="veP-vn-qzZ" secondAttribute="bottom" constant="23" id="hvG-uQ-nuZ"/>
+                <constraint firstItem="nD3-nt-v6P" firstAttribute="centerX" secondItem="Ncy-7I-aEJ" secondAttribute="centerX" id="kRF-u1-JyR"/>
+                <constraint firstItem="QKd-k8-haD" firstAttribute="baseline" secondItem="v6L-K4-5ZQ" secondAttribute="firstBaseline" id="lef-jy-B0m"/>
+                <constraint firstItem="fmW-HU-OPY" firstAttribute="centerX" secondItem="veP-vn-qzZ" secondAttribute="centerX" id="mJF-Lo-CZG"/>
+                <constraint firstItem="veP-vn-qzZ" firstAttribute="leading" secondItem="wC8-hf-gmX" secondAttribute="leading" id="nU8-fx-yIg"/>
+                <constraint firstItem="v6L-K4-5ZQ" firstAttribute="baseline" secondItem="QKd-k8-haD" secondAttribute="firstBaseline" id="oNR-9I-rrC"/>
+                <constraint firstItem="v6L-K4-5ZQ" firstAttribute="top" secondItem="wC8-hf-gmX" secondAttribute="bottom" constant="78" id="oVn-Tl-IZm"/>
+                <constraint firstItem="dgC-Cm-1ck" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oY2-AR-T2B"/>
+                <constraint firstItem="v6L-K4-5ZQ" firstAttribute="top" secondItem="QKd-k8-haD" secondAttribute="top" id="qtJ-Aq-VUZ"/>
+                <constraint firstItem="dgC-Cm-1ck" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="41" id="t1F-Bn-nY2"/>
+                <constraint firstItem="WQr-zT-UBD" firstAttribute="centerX" secondItem="XI4-Xx-asu" secondAttribute="centerX" id="tDS-Ee-GGX"/>
+                <constraint firstItem="8pQ-Hm-hWp" firstAttribute="centerX" secondItem="wC8-hf-gmX" secondAttribute="centerX" id="yIe-lM-B2Q"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="421.5" y="233.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wood.png" width="1112" height="3333"/>
+    </resources>
+</document>
