@@ -8,7 +8,9 @@ and so much more in one project.
 
 In the video demo (https://drive.google.com/open?id=0B2-U3RQI8OUEUEtKTVFGUmx5WEU), I am showing a use case where: 
 1- I enter the application as a business owner
+
 2- I create my business and enter information conscerning its category, address, phone, and a picture
+
 3- Then I submit all the information and exit the app
 4- Then I show the Http requests being sent from my phone to my backend, displaying the transfer of data that was just created
 5- I open the app again and this time enter as a customer looking for the service of a business owner
