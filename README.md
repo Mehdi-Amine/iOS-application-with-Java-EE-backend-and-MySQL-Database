@@ -1,5 +1,6 @@
 # iOS-application-with-Java-EE-backend-and-MySQL-Database
-An application that aims to facilitate interaction between business owners and customers
+An application that aims to facilitate interaction between business owners and customers.
+
 A work in progress that started as a capstone project.
 I want to use this project to learn and experiment and push my limits as a full-stack developer.
 In this project I implemented a backend using Java EE and exposed it as a RESTful web-service to my iOS interface.
